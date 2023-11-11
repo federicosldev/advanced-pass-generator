@@ -1,3 +1,11 @@
+// Mostrar el lenght de la pass
+const rangeInput = document.getElementById('inputRange');
+const rangeInputValue = document.getElementById('inputRangeValue');
+rangeInput.addEventListener('input', () => {
+  const lenght = rangeInput.value;
+  rangeInputValue.textContent = 'LENGTH: ' + lenght;
+});
+
 // Caracteres aleatorios
 const generateRandomCaracters = (length, caracterSet) => {
   let result = '';
@@ -31,7 +39,6 @@ const handleCaracters = () => {
   inputText.value = generateRandomCaracters(length, selectedCaracter);
 };
 
-const rangeInput = document.getElementById('inputRange');
 const checkboxUpper = document.getElementById('uppercase');
 const checkboxLower = document.getElementById('lowercase');
 const checkboxNumbers = document.getElementById('numbers');
