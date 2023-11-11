@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD GENERATOR</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="section-password">
+            <input type="text" placeholder="P4$5WORD!" id="pass" readonly>
+            <label for="length" id="inputRangeValue"><span>LENGTH:</span></label>
+            <div class="section-password__range">
+                <span class="min-max">4</span><input type="range" min="4" max="32" id="inputRange" value="0"><span class="min-max">32</span>
+            </div><br>
+            <div class="section-password__range">
+                <span class="label-input">Include Uppercase</span>
+                <label class="switch">
+                    <input type="checkbox" id="uppercase">
+                    <span class="slider"></span>
+                </label>
+            </div><br>
+            <div class="section-password__range">
+                <span class="label-input">Include Lowercase</span>
+                <label class="switch">
+                    <input type="checkbox" id="lowercase">
+                    <span class="slider"></span>
+                </label>
+            </div><br>
+            <div class="section-password__range">
+                <span class="label-input">Include Numbers</span>
+                <label class="switch">
+                    <input type="checkbox" id="numbers">
+                    <span class="slider"></span>
+                </label>
+                
+            </div><br>
+            <div class="section-password__range">
+                <span class="label-input">Include Symbols</span>
+                <label class="switch">
+                    <input type="checkbox" id="symbols">
+                    <span class="slider"></span>
+                </label>
+                
+            </div>
+            <button type="submit" id="generatePass">Generate Password</button>
+        </section>
+        
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

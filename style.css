@@ -1,0 +1,138 @@
+body {
+    background-color: #efa6f5;
+    background-image: linear-gradient(135deg, #efa6f5 0%, #6976df 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-y: hidden;
+}
+.container {
+    width: 400px;
+}
+.section-password {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: -1px 2px 7px 5px rgba(0, 0, 0, 0.082);
+}
+
+#pass {
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 1px solid rgb(241, 241, 241);
+}
+#inputRangeValue {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #7582E2;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+input[type="range"] {
+    color: black;
+    accent-color: #7582E2;
+    height: 4px;
+    width: 80%;
+}
+
+.section-password__range {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(241, 241, 241);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: rgb(117,130,226);
+    background: linear-gradient(90deg, rgba(117,130,226,1) 34%, rgba(239,166,245,1) 100%);
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 5s ease-in;
+}
+button:hover {
+    background: rgb(117,130,226);
+    background: linear-gradient(90deg, rgba(117,130,226,1) 0%, rgba(239,166,245,1) 60%);
+}
+
+.min-max {
+    color: #7582E2;
+    font-size: 1.2rem;
+}
+
+.label-input {
+    font-weight: 500;
+    color: black;
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+  
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid #adb5bd;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.27em;
+    bottom: 0.25em;
+    background-color: #adb5bd;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #7582E2;
+    border: 1px solid #7582E2;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #7582E2;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(1.4em);
+    background-color: #fff;
+}
